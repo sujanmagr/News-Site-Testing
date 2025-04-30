@@ -15,7 +15,7 @@ class loginpage:
         self.driver.find_element(*self.profile).click()
     
     def scroll_page(self):
-        self.driver.execute_script("window.scrollBy(0,90);")
+        self.driver.execute_script("window.scrollBy(0,100);")
 
     def enter_email(self, email):
         self.driver.find_element(*self.email_textbox).send_keys(email)

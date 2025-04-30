@@ -2,12 +2,14 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
 import time
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pytest
 from pom.page.login_page import loginpage
+from pom.page.signup_page import signup
 @pytest.fixture()
 def driver():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
@@ -38,3 +40,32 @@ def test_login(driver, email, password):
 
     login_page.click_login()
     time.sleep(4)
+
+#sign up test 
+def test_signup(driver):
+    signup_page=signup(driver)
+    signup_page.open_page("https://ekantipur.com/")
+    driver.maximize_window()
+    time.sleep(2)
+    signup_page.open_profile()
+    time.sleep(2)
+
+    signup_page.scroll_page1()
+
+    signup_page.open_signup()
+    time.sleep(1)
+
+    signup_page.enter_fullname("Sachin Budhathoki")
+    time.sleep(1)
+
+    signup_page.enter_Semail("zzz12@gmail.com")
+    time.sleep(1)
+
+    signup_page.enter_Spassword("sac1234")
+    time.sleep(1)
+
+    signup_page.click_signup()
+    time.sleep(3)
+
+
+

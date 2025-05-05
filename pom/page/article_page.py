@@ -15,6 +15,7 @@ class article:
         self.insert_button=(By.XPATH,"//*[@id='fr-link-insert-layer-1']/div[4]/button")
         self.image=(By.ID, "insertImage-1")
         self.file_field=(By.XPATH, "//*[@id='fr-image-upload-layer-1']/div/input")
+        self.save_button=(By.XPATH,"//button[contains(text(),'संचय')]")
        
 
     def open_article(self):
@@ -43,6 +44,10 @@ class article:
         time.sleep(1)
         self.driver.find_element(*self.file_field).send_keys("C:/Users/Bhabisara Budhathoki/Desktop/sdmn.jpg")
         time.sleep(1)
+    
+    def save_article(self):
+        self.driver.find_element(*self.save_button).click()
+        
 
 
 

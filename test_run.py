@@ -38,7 +38,15 @@ def login(driver):
 
     login_page.click_login()
     time.sleep(4)
-
+def close_ad(driver):
+    try:
+        ad_close = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//i[@onclick="hide(\'roadblock-ad\')"]'))
+        )
+        ad_close.click()
+        print("Ad closed successfully")
+    except Exception as e:
+        print("No ad popup or ad close button not found:", e)
 #parameter values for username and password
 @pytest.mark.parametrize("email, password", [
     ("magarsujan1433@gmail.com", "Sujan12345"),
@@ -48,6 +56,7 @@ def login(driver):
 def test_login(driver, email, password):
     login_page=loginpage(driver)
     login_page.open_page("https://ekantipur.com/")
+    close_ad(driver)
     driver.maximize_window()
     time.sleep(2)
     login_page.open_profile()

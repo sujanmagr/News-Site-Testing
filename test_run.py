@@ -4,6 +4,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
 import time
 import sys
 import os
@@ -14,6 +15,7 @@ from pom.page.signup_page import signup
 from pom.page.article_page import article
 from pom.page.live_page import live
 from pom.page.search_page import search
+from pom.page.home_page import home
 
 @pytest.fixture()
 def driver():
@@ -194,6 +196,22 @@ def test_search(driver):
     for _ in range(scroll_iteration):
         driver.execute_script(f"window.scrollBy(0,{scroll_speed});") 
         time.sleep(4)
+
+def test_home(driver):
+    home_page=home(driver)
+    home_page.open_page("https://ekantipur.com/")
+    close_ad(driver)
+    driver.maximize_window()
+    time.sleep(1)
+
+    home_page.click_news()
+    time.sleep(1)
+    close_ad(driver)
+
+
+
+
+
 
 
 

@@ -1,73 +1,165 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6EE7B7,100:3B82F6&height=200&section=header&text=Sachin%20Budhathoki&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38" alt="Banner"/>
-</p>
+# 📝 Final QA Testing Report  
 
-<h1 align="center">Hey 👋, I'm Sachin Budhathoki</h1>
-<p align="center"><i>QA Engineer in the Making | Automation | APIs | Scalable Testing Solutions</i></p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=500&lines=QA+Engineer+in+Training;Automation+Testing+Enthusiast;Learning+Selenium+%7C+JMeter+%7C+Postman;Always+Breaking+to+Improve+%F0%9F%94%A5" />
-</p>
+## 📌 Project Title  
+**Automated Testing for Ekantipur News Portal**  
 
 ---
 
-### 🚀 About Me
-- 🔭 Building QA automation with **Selenium**, **PyTest**, and **Postman**  
-- 🌱 Exploring **performance testing** via **JMeter**  
-- 🛠️ Practicing test case design, bug reporting & planning  
-- 🤖 Investigating **AI/ML for smarter QA**  
-- 🧼 Writing **clean, maintainable test automation frameworks**
+## 1️⃣ Project Overview  
+This project automates the **core user functionalities** of the [Ekantipur News Portal](https://ekantipur.com/) using **Selenium WebDriver with Python** and **PyTest**, following the **Page Object Model (POM)** design pattern.  
+The report outlines the objectives, test implementation, dynamic content handling, and results of functional testing.  
 
 ---
 
-### 🛠️ Tech & Tools
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PyTest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JMeter-D22128?style=for-the-badge&logo=apache-jmeter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</p>
+## 2️⃣ Objectives  
+- ✅ Automate the main features of the Ekantipur site (Login, Signup, Writing Article, Search, Live Page).  
+- ✅ Implement automation using **PyTest** with **POM**.  
+- ✅ Handle **dynamic content** where applicable.  
+- ✅ Provide a **detailed testing report** with test cases and screenshots.  
+- ✅ Ensure a **professional QA submission** with strong documentation.  
 
 ---
 
-### 📌 Projects  
+## 3️⃣ Tools & Technology Used  
 
-#### 🔹 YatriGhar – Hotel Booking Platform  
-A web-based platform to book hotels online with features like booking management, search filters, and payment flow.  
-*Tech:* React, Node.js, Express, MongoDB  
-🔗 [View Repository](https://github.com/sujanmagr/YatriGhar)  
-
----
-
-#### 🔹 Sentiment Analyzer  
-An AI-based tool that analyzes user moods and sentiments using **TextBlob** with a polished UI and live input.  
-*Tech:* Python, Flask, TextBlob, Vercel Deployment  
-🔗 [View Repository](https://github.com/sujanmagr/Sentiment-Analyzer)  
+| Tool / Framework   | Version / Details |
+|--------------------|------------------|
+| Programming Language | Python 3.x |
+| Automation Tool     | Selenium WebDriver |
+| Test Framework      | PyTest |
+| Browser             | Google Chrome (Latest) |
+| WebDriver Manager   | webdriver-manager |
+| Performance Tool    | Apache JMeter *(in separate doc)* |
+| Design Pattern      | Page Object Model (POM) |
 
 ---
 
-#### 🔹 BareStyle – E-commerce Website  
-A simple and responsive e-commerce platform for browsing products, adding to cart, and managing purchases.  
-*Tech:* HTML, CSS, JavaScript  
-🔗 [View Repository](https://github.com/sujanmagr/BareStyle)  
+## 4️⃣ Test Environment  
+
+| Component | Description |
+|-----------|-------------|
+| OS        | Windows 10 |
+| Browser   | Google Chrome |
+| Python    | 3.x |
+| IDE       | VS Code / PyCharm |
 
 ---
 
-### 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sujanmagr&show_icons=true&theme=radical" alt="stats" height="160"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sujanmagr&theme=radical" alt="streak" height="160"/>
-</p>
+## 5️⃣ Test Scenarios & Descriptions  
+
+### 🔹 5.1 Login Functionality  
+- **Objective:** Verify successful login with valid credentials and failure with invalid ones.  
+- **Type:** Functional  
+- **Status:** ✅ Pass  
+- *Screenshot:* *(to be added)*  
 
 ---
 
-### 🔗 Want to know more about me?  
-👉 [Visit My Portfolio](https://portfolio-git-main-sachin-budhathokis-projects.vercel.app/)  
+### 🔹 5.2 Signup Functionality  
+- **Objective:** Validate the user registration process.  
+- **Type:** Functional  
+- **Status:** ✅ Pass  
+- *Screenshot:* *(to be added)*  
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3B82F6,100:6EE7B7&height=120&section=footer"/>
-</p>
+---
+
+### 🔹 5.3 Write & Save an Article  
+- **Objective:** Ensure logged-in users can write and save articles.  
+- **Type:** Functional  
+- **Actions Covered:**  
+  - Write Title  
+  - Write Summary  
+  - Write Full Article  
+  - Insert Link  
+  - Insert Image  
+  - Save Article  
+- **Status:** ✅ Pass  
+- *Screenshot:* *(to be added)*  
+
+---
+
+### 🔹 5.4 Live Page (Dynamic Tab Handling)  
+- **Objective:** Validate dynamic page loading and new tab management for live news.  
+- **Dynamic Handling:**  
+  - Switched to new browser tab  
+  - Scroll height & loop scrolling for lazy-loaded content  
+- **Status:** ✅ Pass  
+- *Screenshot:* *(to be added)*  
+
+---
+
+### 🔹 5.5 Search Bar (Dynamic Content)  
+- **Objective:** Test dynamic search dropdown and results.  
+- **Actions Covered:**  
+  - Open search menu  
+  - Enter search query  
+  - Scroll through dynamically loaded results  
+- **Dynamic Handling:**  
+  - JavaScript scroll  
+  - Slider animation & content loading  
+- **Status:** ✅ Pass  
+- *Screenshot:* *(to be added)*  
+
+---
+
+## 6️⃣ Test Framework & Script Overview  
+- Written in **PyTest** with **Page Object Model (POM)** for scalability.  
+- Includes:  
+  - Login test with parameterization  
+  - Signup with input validation  
+  - Article writing with UI interactions  
+  - Live page handling via new tab logic  
+  - Search bar testing with waits & scrolling  
+
+---
+
+## 7️⃣ Dynamic Content Handling  
+
+- Used `WebDriverWait` and `expected_conditions` for element loading  
+- `driver.execute_script()` for scrolling & interaction  
+- `driver.switch_to.window()` for tab handling  
+
+### 🛑 7.1 Ad Popup Handling  
+- **Problem:** Ad popup occasionally blocked elements.  
+- **Solution:** Utility function detects & closes popup dynamically.  
+- **Why It Matters:**  
+  - Stabilizes test runs  
+  - Handles unexpected UI changes  
+  - Makes automation more **production-ready**  
+
+---
+
+## 8️⃣ Test Execution Summary  
+
+| Test Case           | Description                          | Status |
+|---------------------|--------------------------------------|--------|
+| Login (valid/invalid) | Verify login functionality           | ✅ Pass |
+| Signup              | User account creation                | ✅ Pass |
+| Write Article       | Writing and saving article           | ✅ Pass |
+| Live Page           | Tab handling & scrolling             | ✅ Pass |
+| Search Bar          | Dynamic content handling             | ✅ Pass |
+
+---
+
+## 9️⃣ Bug Report  
+No bugs were found during automation & validation of features.  
+
+---
+
+## 🔟 Conclusion  
+- The automation suite effectively covers major functionality of the **Ekantipur site**.  
+- Supports **maintainability** with POM.  
+- Efficient handling of **dynamic elements, new tabs, and waits**.  
+- **Performance Testing** documented separately.  
+
+---
+
+## 📎 Appendix (Screenshots)  
+1. Login Test Case Screenshot  
+2. Signup Test Case Screenshot  
+3. Write Article Test Case Screenshot  
+4. Search Page Test Case Screenshot  
+
+---
+
+✅ *End of Report*  

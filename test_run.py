@@ -51,7 +51,7 @@ def close_ad(driver):
         print("No ad popup or ad close button not found:", e)
 #parameter values for username and password
 @pytest.mark.parametrize("email, password", [
-    ("magarsujan1433@gmail.com", "Sujan12345"),
+    ("testgood@gmail.com", "Password@1234"),
     ("zzz@gmail.com", "password"),#wrong user
 ])
 #for login test

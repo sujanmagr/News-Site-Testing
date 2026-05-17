@@ -32,10 +32,10 @@ def login(driver):
 
     login_page.scroll_page()
     #send username
-    login_page.enter_email("magarsujan1433@gmail.com")
+    login_page.enter_email("testgood@gmail.com")
     time.sleep(1)
     # send password
-    login_page.enter_password("Sujan12345")
+    login_page.enter_password("Password@12345")
     time.sleep(1)
 
     login_page.click_login()
